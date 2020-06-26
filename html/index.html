@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>oNews</title>
+
+    <!-- Reboot.css est un reset amélioré (avec des valeurs par défaut standardisées) https://getbootstrap.com/docs/4.1/content/reboot/ -->
+    <link rel="stylesheet" href="../css/reboot.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <!-- Emmet: header+main -->
+        <header class="left">
+            <!-- Emmet: h1+h2+p+nav>ul>li*3>a -->
+            <h1 class="site-title">O'Clock Students News</h1>
+            <div class="introduction">
+                <h2 class="introduction__title">Latest news <span class="introduction__subtitle">from our students</span></h2>
+                <p class="introduction__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Id ipsam quisquam consectetur pariatur culpa cumque provident nam. Quam porro adipisci error architecto, sint quisquam itaque vero dolore inventore expedita omnis a aperiam!
+                </p>
+            </div>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="menu__item"><a href="" class="menu__link">Plan de site</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Mentions légales</a></li>
+                    <li class="menu__item"><a href="" class="menu__link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main class="right">
+            <!-- Emmet: h2+article*4>a+h3+p>img+em+time^p+a{Continue Reading} -->
+            <h2 class="right-title">Latest News</h2>
+            <div class="posts">
+                <article class="post">
+                    <a href="" class="post__category post__category--news">News</a>
+                    <h3 class="post__title">Lorem ipsum dolor sit amet</h3>
+                    <p class="post__infos">
+                        <img class="post__author-pic" src="../images/icon-john.png" alt="John Marchill picture"> <em class="post__author">John Marchill</em> le
+                        <time datetime="2019-07-21">21 Juillet 2019</time>
+                    </p>
+                    <p class="post__text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, tenetur? Aspernatur praesentium sunt dolorem, consequatur neque asperiores! Ad dolorum repudiandae laborum consectetur.
+                    </p>
+                    <a href="" class="post__link">Continue Reading</a>
+                </article>
+                <article class="post">
+                    <a href="" class="post__category post__category--team">Team</a>
+                    <h3 class="post__title">Le pair programming pour les n00bs</h3>
+                    <p class="post__infos">
+                        <img class="post__author-pic" src="../images/icon-dar.png" alt="Paul Darson picture"> <em class="post__author">Paul Darson</em> le
+                        <time datetime="2019-08-02">2 Août 2019</time>
+                    </p>
+                    <p class="post__text">
+                        Le pair programming pour les dévs, c'est un peu comme certains fromages : c'est mieux à deux.
+                    </p>
+                    <a href="" class="post__link">Continue Reading</a>
+                </article>
+                <article class="post">
+                    <a href="" class="post__category post__category--work">Work</a>
+                    <h3 class="post__title">Pourquoi j'aime PHP</h3>
+                    <p class="post__infos">
+                        <img class="post__author-pic" src="../images/icon-ohz.png" alt="Bruce Ékoute picture"> <em class="post__author">Bruce Ékoute</em> le
+                        <time datetime="2019-08-07">7 Août 2019</time>
+                    </p>
+                    <p class="post__text">
+                        PHP est le langage le plus répandu dans le Web. Je vous propose de faire le tour de toutes ces petites
+                        choses simples qui lui donnent une saveur si unique.
+                    </p>
+                    <a href="" class="post__link">Continue Reading</a>
+                </article>
+                <article class="post">
+                    <a href="" class="post__category post__category--team">Team</a>
+                    <h3 class="post__title">La situation de scribe</h3>
+                    <p class="post__infos">
+                        <img class="post__author-pic" src="../images/icon-spr.png" alt="Otis Picture"> <em class="post__author">Otis</em> le
+                        <time datetime="2019-09-05">5 Septembre 2019</time>
+                    </p>
+                    <p class="post__text">
+                        Mais, vous savez, moi je ne crois pas qu'il y ait de bonne ou de mauvaise situation. Moi, si je devais
+                        résumer ma vie aujourd'hui avec vous, je dirais que c'est d'abord des rencontres, des gens qui m'ont
+                        tendu la main, peut-être à un moment où je ne pouvais pas, où j'étais seul chez moi. Et c'est assez
+                        curieux de se dire que les hasards, les rencontres forgent une destinée...
+                    </p>
+                    <a href="" class="post__link">Continue Reading</a>
+                </article>
+                <article class="post">
+                    <a href="" class="post__category post__category--work">Work</a>
+                    <h3 class="post__title">Le travail : pourquoi ce n'est jamais naturel ?</h3>
+                    <p class="post__infos">
+                        <img src="../images/icon-tr.png" alt="Trouveur d'Éperon de Wyverne Picture" class="post__author-pic">
+                        <em class="post__author">Trouveur d'Éperon de Wyverne</em>
+                        le <time datetime="2019-09-06">6 Septembre 2019</time>
+                    </p>
+                    <p class="post__text">
+                        Le terme "travail" vient du latin "trepalium" qui signifie "torture". Voilà, je vous laisse avec ça.
+                    </p>
+                    <a href="" class="post__link">Continue reading</a>
+                </article>
+                <article class="post">
+                    <a href="" class="post__category post__category--news">News</a>
+                    <h3 class="post__title">Les chats augmentent la longévité</h3>
+                    <p class="post__infos">
+                        <img src="../images/icon-tre.png" alt="Rincevent Picture" class="post__author-pic">
+                        <em class="post__author">Rincevent</em>
+                        le <time datetime="2019-09-27">27 Septembre 2019</time>
+                    </p>
+                    <p class="post__text">
+                        Jusqu'à un certain nombre. Au delà de 28 chats, les scientifiques semblent quelque peu sceptiques.
+                        Surtout sur l'aspect budgétaire...
+                    </p>
+                    <a href="" class="post__link">Continue reading</a>
+                </article>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

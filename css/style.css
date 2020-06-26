@@ -1,0 +1,183 @@
+/*.wrapper {
+  display: flex;
+}*/
+
+/* --- GAUCHE --- */
+
+.left {
+  width: 50%;
+  padding: 3rem 2rem 1rem 2rem;
+  background-image: url(../images/nicole.jpg);
+  background-position: center center;
+  background-size: cover;
+  color: white;
+
+  /* On répartit l'espace vertical en trop entre chaque élément */
+  display: flex;
+  flex-direction: column;
+
+  /* Comme on a changé le sens, justify-content change de sens aussi, et répartit verticalement les espaces */
+  justify-content: space-between;
+
+  /* Bonus défilement, on garde la partie de gauche figée */
+  position: fixed;
+
+  /* Comme l'élément est sorti flux, y'a plus de flex, et donc la hauteur est la hauteur minimum par rapport au contenu
+  => on force 100% de la height du navigateur */
+  height: 100vh;
+}
+
+.right {
+  width: 50%;
+
+  /* Bonus défilement, on garde la partie de gauche figée
+  comme la partie de gauche est en dehors du flux,
+  la partie de droite, commence en haut à gauche
+  si on la veut à droite, on doit forcer le décalage */
+  margin-left: 50%;
+}
+
+.site-title {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.6em;
+  background-image: url(../images/onews.svg);
+  background-repeat: no-repeat;
+  background-size: 35px;
+  padding-left: 40px;
+
+  /* on force le retour à la ligne en CSS, en réduisant la largeur */
+  width: 100px;
+
+  /* On change l'interligne */
+  line-height: 1;
+}
+
+.introduction {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 1rem;
+  text-align: right;
+
+  /* astuce pour lire du texte blanc, sur un fond blanc */
+  text-shadow: 0 0 6px black;
+}
+
+.introduction__subtitle {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 0.5em; /* 50% de ma font-size parent ( 24px car 1.5em) */
+}
+
+.introduction__text {
+  font-size: 0.75em;
+}
+
+.menu {
+  text-align: right;
+}
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu__item {
+  display: inline-block;
+}
+
+.menu__link {
+  color: white;
+  font-weight: 700; /* = bold */
+  font-size: 0.9em;
+  padding: 0.5rem;
+
+  /* astuce pour lire du texte blanc, sur un fond blanc */
+  text-shadow: 0 0 6px black;
+}
+
+.menu__link:hover {
+  background-color: rgba(255, 0, 255, 0.4);
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5rem;
+}
+
+/* --- DROITE --- */
+.right-title {
+  padding: 1rem 2rem;
+  background-color: #f9f9f9;
+  margin: 0;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.post {
+  width: 50%;
+  border-right: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
+  padding: 1.4rem;
+}
+
+.post__category {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.8em;
+  background-color: grey;
+  border-radius: 4px;
+}
+
+/* les modifiers liés à .post__category */
+.post__category--news {
+  background-color: #98dc62;
+}
+
+.post__category--team {
+  background-color: #dc5e53;
+}
+
+.post__category--work {
+  background-color: #0766f0;
+}
+
+.post__category:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.post__title {
+  line-height: 1.1;
+  margin: 1.2rem 0;
+}
+
+.post__infos {
+  font-size: 0.8em;
+  color: #999;
+  margin: 1rem 0;
+}
+
+.post__author-pic {
+  width: 1.6rem;
+}
+
+.post__author {
+  font-style: normal;
+  font-weight: bold;
+  color: black;
+}
+
+.post__link {
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+.post__link:hover {
+  text-decoration: none;
+}
